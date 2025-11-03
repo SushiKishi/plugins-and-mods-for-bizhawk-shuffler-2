@@ -1,53 +1,44 @@
-# Bizhawk Shuffler 2 Plugins and Modifications
+# Hot Swap Timers - Plugin for Bizhawk Shuffler 2
 
- - [Modified Swap Timer Plugin](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/releases/Modifiable%20Swap%20Timers)
- - [Weighted Odds Shuffle Mode Mod](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/releases/Weighted%20Odds)
- - Temporary Goods Plugin - Under Development
- - "YOU WIN" Plugin - Under Development
+* [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Hot%20Swap%20Timers/Hot%20Swap%20Timers%20-%20BS2%20Plugin.zip) (v1.00)
+* [All releases](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Hot%20Swap%20Timers/all%20releases)
+* [Branch](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/hot-swap-timers) (for contributing to code)
+
+## What's new this version?
+
+* Added ability to use either one or two files to set timers.
+* Forgot to keep the 1.00 version of the file, so this is version 1.00 now, so that it doesn't look like I messed up. <3
+
+## What does this do?
+
+This allows you to control the swap timers (minimum and maximum range) of the Bizhawk Shuffler 2 by modifying either one or two different text files.  This gives you the ability to, say, have your Twitch bot / StreamDeck / Whatever turn the timers up or down based on chat interaction.  You can also edit them manually by hand if you want.
+
+## How do I use this?
+
+**Outside of Bizhawk Shuffler**
+1. **Figure out how you want to modify your timer files.**
+	* Options include using stream bot to react to commands or interactions, StreamDeck, SAMMI, or manually changing the numbers yourself as needed with a text editor.
+2. **Create your text files.**
+	* You can place them anywhere and name them anything.
+	* For the two-file setup, you'll need, well, two files. Each file should only contain one line of text -- the timer you want to use, in seconds.
+	* For the combo or one-file setup, you'll jsut need one text file. It will have two lines -- first line for the minimum swap timer, second line for the max swap timer.
+
+**Outside of Bizhawk Shuffler**
+1. Put the .lua file in the Shuffler's plugins folder
+2. Start the Shuffler and enable the plugin in the settings window.
+3. In the plugin's settings, choose either a "combo" (one-file) setup or a two-file setup.
+4. Set your file locations in the plugin's settings.
+5. Play!
 
 
-## What's all this then?
+Feel free to test this "off-air" before taking it live by directly modifying your text files and seeing if the swaps happen faster or slower.
 
-I'm working on some plugins and feature requests for the Bizhawk Shuffler 2. If you don't know what that is, [check it out here](https://github.com/authorblues/bizhawk-shuffler-2)! But in short, it swaps the game you're playing in the Bizhawk emulator at random intervals, allowing you to play multiple games for a few seconds (or however long you'd like) at a time.
+## FAQ
 
-The plugins can be installed by simply going to their release page and downloading them. Plugins are comfy and easy to use! Any "mods" that are not plugins, but have to be 'baked in' to the main Shuffler code, can be downloaded in the same way, but you'll want to read up more on those individually since it's modifying the Shuffler code itself. The Shuffler doesn't have any official "mods" (that's what the plugins are), so you're essentially downloading an unofficial release of the Shuffler.
+**Q: It doesn't seem to be working.**
 
-That sounds ominous, but it really just means "I changed a few lines of code in the main shuffler app so if something in the Shuffler breaks that's probably why."
+A: Check Bizhawk's lua console window. The plugin will spit out error messages if it runs into an issue.
 
-## Modifiable Swap Timers - Plugin
+**Q: There are no error messages but the plugin doesn't seem to be working.** I tried setting minimum and maximum to 1-2 seconds and it still takes a long time to swap.
 
-[Plugin page](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/releases/Modifiable%20Swap%20Timers) (download, instructions, etc.)
-[Branch](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/modifiable-swap-timers) (for contributing to code)
-
-By default, you have to set the minimum and maximum swap timers for the Shuffler at the start of your game, and you can't modify them again unless you stop playing and go back to the settings screen.  This lets you change the timers by modifying text files -- allowing for, say, donation incentives or other viewer interactions to change how often the Shuffler changes games.
-
-## Weighted Odds - "Mod"
-
-[Main Page](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/releases/Weighted%20Odds) (download, instructions, etc.)
-[Branch](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/weighted-odds) (for contributing to code)
-
-The Shuffler has a "random" shuffler option that picks games at random.  That, technically, means that the game you played last swap is just as likely to be chosen again as every other game, including games you haven't played in a while.
-This mod adds a Weighted Odds shuffle mode. The longer a game goes without being played, the more likely it is to be selected next. It can make the Shuffler "feel" more random, even if mathematically it technically isn't.
-
-## Temporary Goods - Plugin
-
-Still in development
-
-Temporary Goods allows you to choose a list of games you can set aside as "temporary." This could be used to have, say, donation incentives to play certain games in the Shuffler.  For example, if a viewer tips $X, then the streamer has to play 1 full loop of Donkey Kong on the NES.
-
-To do this, you need to add Donkey Kong to the play list, but you'll be swapping it into and out of the game list innumerable times throughout your stream.  This plugin makes that process much, much simpler.
-
-## Ye Olde "User Wins" Instant Notification - Plugin
-
-Still In Development
-
-Ye Olde "User Wins" Instant Notification simply displays in big, fancy letters on the game screen that YOU WIN! when you finish completing your Shuffler playlist. By default, the completion notification only appears within the Lua dialog box. Boring!
-
-## Contributing
-
-Other than this Readme page, this main branch is an exact fork of Bizhawk Shuffler 2 as it was pulled in April 2025. If you want to push changes to any of the plugins or feature additions, make sure you push to the correct branch:
-
- - Modified Swap Timer plugin: modified-swap-timer
- - Weighted Odds shuffle mode: weighted-odds
- - Temporary Goods plugin: temp-goods
- - Ye Older "User Wins" Instant Notification plugin: you-win
+A: Make sure you have more than one game in the game list!  Make sure the Shuffler is actually running.  Make sure your files aren't set to read-only or being overwritten.
