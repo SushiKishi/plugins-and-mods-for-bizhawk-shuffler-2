@@ -28,7 +28,7 @@ Why would you want to do this? For viewer interaction, of course!  You can set u
 	* Place the ROM files you want to make temporary goods in the **<Plugin>\TempGoods\storage** folder
 
 2. **Figure out how you set up your triggers.**
-	* The plugin will look in the **<Plugin Folder>\TempGoods\release** folder to determine what games to 'release' from storage.
+	* The plugin will look in the **<Plugin Folder>\TempGoods\restore** folder to determine what games to 'release' from storage.
 	* It's looking for a file either named:
 		
 		* Exactly the same as your rom file (e.g. an empty file named "Donkey Kong.nes")
