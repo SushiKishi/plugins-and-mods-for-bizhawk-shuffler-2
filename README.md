@@ -1,18 +1,18 @@
 # Bizhawk Shuffler 2 Plugins and Modifications
 
- - [Modified Swap Timer Plugin](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/releases/Modifiable%20Swap%20Timers)
- - [Weighted Odds Shuffle Mode Mod](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/releases/Weighted%20Odds)
- - Temporary Goods Plugin - Under Development
- - "YOU WIN" Plugin - Under Development
+ - [Hot Swap Timers Plugin](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Hot%20Swap%20Timers)
+ - [Weighted Odds Shuffle Mode Mod](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Weighted%20Odds%20Mod)
+ - [Temporary Goods Plugin](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Temporary%20Goods)
+ - "YOU WIN" Plugin - Coming Soon(tm)
 
 
 ## What's all this then?
 
 I'm working on some plugins and feature requests for the Bizhawk Shuffler 2. If you don't know what that is, [check it out here](https://github.com/authorblues/bizhawk-shuffler-2)! But in short, it swaps the game you're playing in the Bizhawk emulator at random intervals, allowing you to play multiple games for a few seconds (or however long you'd like) at a time.
 
-The plugins can be installed by simply going to their release page and downloading them. Plugins are comfy and easy to use! Any "mods" that are not plugins, but have to be 'baked in' to the main Shuffler code, can be downloaded in the same way, but you'll want to read up more on those individually since it's modifying the Shuffler code itself. The Shuffler doesn't have any official "mods" (that's what the plugins are), so you're essentially downloading an unofficial release of the Shuffler.
+The plugins can be installed by simply going to their release page and downloading them. Plugins are comfy and easy to use! Any "mods" that are not plugins have to be 'baked in' to the main Shuffler code. You'll want to read up more on those individually since it's modifying the Shuffler code itself. The Shuffler doesn't have any official "mods" (that's what the plugins are), so you're essentially downloading an unofficial release of the Shuffler.
 
-That sounds ominous, but it really just means "I changed a few lines of code in the main shuffler app so if something in the Shuffler breaks that's probably why."
+That sounds ominous, but it really just means "I changed a few lines of code in the main shuffler app so if something breaks that's probably why."
 
 ## Modifiable Swap Timers - Plugin
 
