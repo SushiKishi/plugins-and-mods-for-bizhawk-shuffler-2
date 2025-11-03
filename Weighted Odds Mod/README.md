@@ -1,53 +1,49 @@
-# Bizhawk Shuffler 2 Plugins and Modifications
+# Weighted Odds Mod for Bizhawk Shuffler 2
 
- - [Modified Swap Timer Plugin](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/releases/Modifiable%20Swap%20Timers)
- - [Weighted Odds Shuffle Mode Mod](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/releases/Weighted%20Odds)
- - Temporary Goods Plugin - Under Development
- - "YOU WIN" Plugin - Under Development
+ * New release under development.
+ 
 
 
-## What's all this then?
+## What will this do?
 
-I'm working on some plugins and feature requests for the Bizhawk Shuffler 2. If you don't know what that is, [check it out here](https://github.com/authorblues/bizhawk-shuffler-2)! But in short, it swaps the game you're playing in the Bizhawk emulator at random intervals, allowing you to play multiple games for a few seconds (or however long you'd like) at a time.
+This is a direct modification of Bizhawk Shuffler 2 to give it the ability to choose the next game based on weighted odds -- as in, the longer a game goes without being picked, the more likely it is to be picked.  This may "feel" more random, even if it technically isn't.
 
-The plugins can be installed by simply going to their release page and downloading them. Plugins are comfy and easy to use! Any "mods" that are not plugins, but have to be 'baked in' to the main Shuffler code, can be downloaded in the same way, but you'll want to read up more on those individually since it's modifying the Shuffler code itself. The Shuffler doesn't have any official "mods" (that's what the plugins are), so you're essentially downloading an unofficial release of the Shuffler.
+Each game starts with one 'lottery ticket.' When a game is selected and played, it loses all of its tickets. When a game is NOT selected, it gains one ticket.  The Shuffler pulls a random number from all the assigned tickets to pick the next game.
 
-That sounds ominous, but it really just means "I changed a few lines of code in the main shuffler app so if something in the Shuffler breaks that's probably why."
+If you are playing a 6 game Shuffler, and somehow by chance the games are picked exactly in order for the first five swaps, then the odds of each game being chosen are as follows:
 
-## Modifiable Swap Timers - Plugin
 
-[Plugin page](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/releases/Modifiable%20Swap%20Timers) (download, instructions, etc.)
-[Branch](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/modifiable-swap-timers) (for contributing to code)
+|        |                     | Shuffler Start | Swap 1: Game 1 | Swap 2: Game 2 | Swap 3: Game 3 | Swap 4: Game 4 | Swap 5: Game 5 |
+|--------|---------------------|----------------|----------------|----------------|----------------|----------------|----------------|
+| Game 1 | Random Shuffle Odds | 1/6 - ~16.6%   | None           | 1/6 - 16.6%    | 1/6 - 16.6%    | 1/6 - 16.6%    | 1/6 - 16.6%    |
+|        | Weighted Odds       | 1/6 - ~16.6%   | None           | 1/13 - ~7.6%   | 2/15 - ~13.3%  | 3/16 - 18.75%  | 4/16 - 25%     |
+| Game 2 | Random Shuffle Odds | 1/6 - ~16.6%   | 1/6 - ~16.6%   | None           | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   |
+|        | Weighted Odds       | 1/6 - ~16.6%   | 2/10 - 20%     | None           | 1/15 - ~6.7%   | 2/16 - 12.5%   | 3/16 - 18.75%  |
+| Game 3 | Random Shuffle Odds | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   | None           | 1/6 - ~16.6%   | 1/6 - ~16.6%   |
+|        | Weighted Odds       | 1/6 - ~16.6%   | 2/10 - 20%     | 3/13 - ~23%    | None           | 1/16 - 6.25%   | 2/16 - 12.5%   |
+| Game 4 | Random Shuffle Odds | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   | None           | 1/6 - ~16.6%   |
+|        | Weighted Odds       | 1/6 - ~16.6%   | 2/10 - 20%     | 3/13 - ~23%    | 4/15 - ~26.7%  | None           | 1/16 - 6.25%   |
+| Game 5 | Random Shuffle Odds | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   | None           |
+|        | Weighted Odds       | 1/6 - ~16.6%   | 2/10 - 20%     | 3/13 - ~23%    | 4/15 - ~26.7%  | 5/16 - 31.25%  | None           |
+| Game 6 | Random Shuffle Odds | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   | 1/6 - ~16.6%   |
+|        | Weighted Odds       | 1/6 - ~16.6%   | 2/10 - 20%     | 3/13 - ~23%    | 4/15 - ~26.7%  | 5/16 - 31.25%  | 6/16 - 37.5%   |
 
-By default, you have to set the minimum and maximum swap timers for the Shuffler at the start of your game, and you can't modify them again unless you stop playing and go back to the settings screen.  This lets you change the timers by modifying text files -- allowing for, say, donation incentives or other viewer interactions to change how often the Shuffler changes games.
 
-## Weighted Odds - "Mod"
+## How to use it
 
-[Main Page](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/releases/Weighted%20Odds) (download, instructions, etc.)
-[Branch](https://github.com/SushiKishi/bizhawk-shuffler-2/tree/weighted-odds) (for contributing to code)
+Bizhawk Shuffler 2 does not appear to have any official releases or versioning, which makes some of this difficult.  This feature has not been officially added, which also makes things difficult.
 
-The Shuffler has a "random" shuffler option that picks games at random.  That, technically, means that the game you played last swap is just as likely to be chosen again as every other game, including games you haven't played in a while.
-This mod adds a Weighted Odds shuffle mode. The longer a game goes without being played, the more likely it is to be selected next. It can make the Shuffler "feel" more random, even if mathematically it technically isn't.
+This mod was last updated on the date stated above. It contains the entire Bizhawk Shuffler code, as of that date, including the Weighted Odds modifications.
 
-## Temporary Goods - Plugin
+Any new features added to BS2 since then will not be present here.  It may or may not work on the newest version of Bizhawk.  Versioning information is at the top of the page.
 
-Still in development
+## Okay but that didn't answer the question
 
-Temporary Goods allows you to choose a list of games you can set aside as "temporary." This could be used to have, say, donation incentives to play certain games in the Shuffler.  For example, if a viewer tips $X, then the streamer has to play 1 full loop of Donkey Kong on the NES.
+OK, so you know how the official Bizhawk Shuffler 2 instructions say to download that file and extract it directly into your Bizhawk folder? You do the same thing, but with this file instead.  It is a complete installaion of the Bizhawk Shuffler.
 
-To do this, you need to add Donkey Kong to the play list, but you'll be swapping it into and out of the game list innumerable times throughout your stream.  This plugin makes that process much, much simpler.
 
-## Ye Olde "User Wins" Instant Notification - Plugin
+## FAQs
 
-Still In Development
+Q: Something isn't working.
+A: You can send me a friendly message @SushiKishi wherever you tune in to at symbols. The fastest way to get playing again is to use an official version of the Bizhawk Shuffler. It's unlikely I can help much. You will get no support from official BS2 channels with this.
 
-Ye Olde "User Wins" Instant Notification simply displays in big, fancy letters on the game screen that YOU WIN! when you finish completing your Shuffler playlist. By default, the completion notification only appears within the Lua dialog box. Boring!
-
-## Contributing
-
-Other than this Readme page, this main branch is an exact fork of Bizhawk Shuffler 2 as it was pulled in April 2025. If you want to push changes to any of the plugins or feature additions, make sure you push to the correct branch:
-
- - Modified Swap Timer plugin: modified-swap-timer
- - Weighted Odds shuffle mode: weighted-odds
- - Temporary Goods plugin: temp-goods
- - Ye Older "User Wins" Instant Notification plugin: you-win

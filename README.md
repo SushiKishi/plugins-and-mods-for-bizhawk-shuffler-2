@@ -1,8 +1,8 @@
 # Bizhawk Shuffler 2 Plugins and Modifications
 
  - [Hot Swap Timers Plugin](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Hot%20Swap%20Timers)
- - [Weighted Odds Shuffle Mode Mod](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Weighted%20Odds%20Mod)
  - [Temporary Goods Plugin](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Temporary%20Goods)
+ - [Weighted Odds Shuffle Mode Mod](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Weighted%20Odds%20Mod)
  - "YOU WIN" Plugin - Coming Soon(tm)
 
 
@@ -22,15 +22,6 @@ That sounds ominous, but it really just means "I changed a few lines of code in 
 
 By default, you have to set the minimum and maximum swap timers for the Shuffler at the start of your game, and you can't modify them again unless you stop playing and go back to the settings screen.  This lets you change the timers by modifying text files -- allowing for, say, donation incentives or other viewer interactions to change how often the Shuffler changes games.
 
-## Weighted Odds - "Mod"
-
-* [Main Page](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Weighted%20Odds%20Mod) (download, instructions, etc.)
-* [Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Weighted%20Odds%20Mod/Weighted%20Odds%20-%20BS2%20Mod.zip) (if you don't know what this is please read the main page first.)
-* [Branch](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/weighted-odds-mod) (for contributing to code)
-
-The Shuffler has a "random" shuffler option that picks games at random.  That, technically, means that the game you played last swap is just as likely to be chosen again as every other game, including games you haven't played in a while.
-This mod adds a Weighted Odds shuffle mode. The longer a game goes without being played, the more likely it is to be selected next. It can make the Shuffler "feel" more random, even if mathematically it technically isn't.
-
 ## Temporary Goods - Plugin
 
 * [Main Page](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Temporary%20Goods) (download, instructions, etc.)
@@ -41,6 +32,15 @@ This mod adds a Weighted Odds shuffle mode. The longer a game goes without being
 Temporary Goods allows you to choose a list of games you can set aside as "temporary." The typical reason for this is to allow a game into the Shuffler as a donation incentive -- say, for every $X in donations, you add one loop of Donkey Kong to the Shuffler.
 
 Usually, this is an extremely complicated and clunky process, requiring multiple stoppages of play.  With this plugin, it's very easy!
+
+## Weighted Odds - "Mod"
+
+* [Main Page](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Weighted%20Odds%20Mod) (download, instructions, etc.)
+* Currently no official release -- something broke when BS2 updated and I gotta fix it.
+* [Branch](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/weighted-odds-mod) (for contributing to code)
+
+The Shuffler has a "random" shuffler option that picks games at random.  That, technically, means that the game you played last swap is just as likely to be chosen again as every other game, including games you haven't played in a while.
+This mod adds a Weighted Odds shuffle mode. The longer a game goes without being played, the more likely it is to be selected next. It can make the Shuffler "feel" more random, even if mathematically it technically isn't.
 
 ## Ye Olde "User Wins" Instant Notification - Plugin
 
