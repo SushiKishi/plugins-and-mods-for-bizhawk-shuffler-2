@@ -2,36 +2,41 @@
 
 * [Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Temporary%20Goods/Temporary%20Goods%20-%20BS2%20Plugin.zip) (v1.00)
 * [All Releases](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Temporary%20Goods/all%20releases)
-
+* [Branch](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/temporary-goods) (for contributing to code)
 
 ## What's new this version?
 
-* Added ability to use either one or two files to set timers.
-* Forgot to keep the 1.00 version of the file, so this is version 1.00 now, so that it doesn't look like I messed up. <3
+* First public release!
+
+Known Issues:
+
+The plugin simply does nothing if there is only **one active game remaining** in the Shuffler list. It works around games being swapped, so if there are no game swaps, it can't function. Every option I have tried to work around this is very intrusive to game play.
+
 
 ## What does this do?
 
-This allows you to control the swap timers (minimum and maximum range) of the Bizhawk Shuffler 2 by modifying either one or two different text files.  This gives you the ability to, say, have your Twitch bot / StreamDeck / Whatever turn the timers up or down based on chat interaction.  You can also edit them manually by hand if you want.
+This allows you to set a list of games to be treated as "Temporary Goods." Temporary Goods can be added to the Shuffler's game list, just like any other game -- but when you mark them as "completed," the Shuffler will otherwise completely forget about them. This lets you add them back in very easily (trust me -- this is an entire ordeal otherwise).
+
+Why would you want to do this? For viewer interaction, of course!  You can set up a trigger on Stream Deck, SAMMI, your bot, whatever, so that when a viewer redeems channel points or donates a certain amount, suddenly you have to do an extra playthrough of, say, Donkey Kong on the NES. Every $X means another loop, but even if you clear the game...it could come back!
 
 ## How do I use this?
 
 **Outside of Bizhawk Shuffler**
-1. **Figure out how you want to modify your timer files.**
-	* Options include using stream bot to react to commands or interactions, StreamDeck, SAMMI, or manually changing the numbers yourself as needed with a text editor.
-2. **Create your text files.**
-	* You can place them anywhere and name them anything.
-	* For the two-file setup, you'll need, well, two files. Each file should only contain one line of text -- the timer you want to use, in seconds.
-	* For the combo or one-file setup, you'll jsut need one text file. It will have two lines -- first line for the minimum swap timer, second line for the max swap timer.
+1. **Extract** the download to your Bizhawk Shuffler\Plugins folder.
 
-**Outside of Bizhawk Shuffler**
-1. Put the .lua file in the Shuffler's plugins folder
-2. Start the Shuffler and enable the plugin in the settings window.
-3. In the plugin's settings, choose either a "combo" (one-file) setup or a two-file setup.
-4. Set your file locations in the plugin's settings.
-5. Play!
+2. **Store your ROMS!**
+	* Place the ROM files you want to make temporary goods in the **<Plugin>\TempGoods\storage** folder
 
-
-Feel free to test this "off-air" before taking it live by directly modifying your text files and seeing if the swaps happen faster or slower.
+2. **Figure out how you set up your triggers.**
+	* The plugin will look in the **<Plugin Folder>\TempGoods\release** folder to determine what games to 'release' from storage.
+	* It's looking for a file either named:
+		
+		* Exactly the same as your rom file (e.g. an empty file named "Donkey Kong.nes")
+		* A .txt file named exactly the same as your rom file (e.g. an empty file named "Donkey Kong.nes.txt")
+	
+**Inside Bizhawk Shuffler**
+1. Enable the plugin on initial shuffler setup.
+2. That's pretty much it; it'll handle things from there.
 
 ## FAQ
 
@@ -39,6 +44,9 @@ Feel free to test this "off-air" before taking it live by directly modifying you
 
 A: Check Bizhawk's lua console window. The plugin will spit out error messages if it runs into an issue.
 
-**Q: There are no error messages but the plugin doesn't seem to be working.** I tried setting minimum and maximum to 1-2 seconds and it still takes a long time to swap.
+**Q: There are no error messages but the plugin doesn't seem to be working.** Feel free to send me a friendly message @SushiKishi whereever at symbols are sold.
 
-A: Make sure you have more than one game in the game list!  Make sure the Shuffler is actually running.  Make sure your files aren't set to read-only or being overwritten.
+**Q: Why is it called "Temporary Goods?"**
+
+A: It's an [unused item](https://tcrf.net/EarthBound) in the game EarthBound, which is my favorite game of all time.
+
