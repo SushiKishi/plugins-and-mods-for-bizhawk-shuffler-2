@@ -44,7 +44,8 @@ Why would you want to do this? For viewer interaction, of course!  You can set u
 
 A: Check Bizhawk's lua console window. The plugin will spit out error messages if it runs into an issue.
 
-**Q: There are no error messages but the plugin doesn't seem to be working.** Feel free to send me a friendly message @SushiKishi whereever at symbols are sold.
+**Q: There are no error messages but the plugin doesn't seem to be working.**
+A: Feel free to send me a friendly message @SushiKishi whereever at symbols are sold.
 
 **Q: Why is it called "Temporary Goods?"**
 
