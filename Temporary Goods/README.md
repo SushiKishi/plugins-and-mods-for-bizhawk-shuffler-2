@@ -28,14 +28,14 @@ TLDR:
 5) Mark the game as complete to remove it from the game list.
 6) Repeat steps 4 and 5 as needed.
 
-If you need more help, head here.
+If you need more help, head [here](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/wiki/Temporary-Goods-%E2%80%90-Getting-Started).
 
 
 ## Trigger Files
 
 TLDR: Create a file with the same filename (or the same filename plus .txt) as your TempGood game in the `restore` directory. E.G. if you want to take `Donkey Kong.nes` out of your TempGoods storage, create a file named `Donkey Kong.nes` or `Donkey Kong.nes.txt` in your `restore` directory.
 
-If you need more help, head here.
+If you need more help, head [here](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/wiki/Temporary-Goods-%E2%80%90-Getting-Started#trigger-files).
 
 ## Quick Links:
 
