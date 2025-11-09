@@ -1,53 +1,49 @@
 # Temporary Goods Plugin
 
-* [Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Temporary%20Goods/Temporary%20Goods%20-%20BS2%20Plugin.zip) (v1.00)
+* [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Temporary%20Goods/Temporary%20Goods%20-%20BS2%20Plugin.zip) (v1.10)
 * [All Releases](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Temporary%20Goods/all%20releases)
-* [Branch](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/temporary-goods) (for contributing to code)
+
 
 ## What's new this version?
 
-* First public release!
+* The plugin can now update your game list when there is only one game in the game list.
 
-Known Issues:
-
-The plugin simply does nothing if there is only **one active game remaining** in the Shuffler list. It works around games being swapped, so if there are no game swaps, it can't function. Every option I have tried to work around this is very intrusive to game play.
+Known Issues: None; please report any issues using [GitHub's Issues tracker](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/issues).
 
 
 ## What does this do?
 
-This allows you to set a list of games to be treated as "Temporary Goods." Temporary Goods can be added to the Shuffler's game list, just like any other game -- but when you mark them as "completed," the Shuffler will otherwise completely forget about them. This lets you add them back in very easily (trust me -- this is an entire ordeal otherwise).
+This is a plugin for the Bizhawk Shuffler 2. It allows you to temporarily add games into the game list and add those games in again after they've been marked "completed."
 
-Why would you want to do this? For viewer interaction, of course!  You can set up a trigger on Stream Deck, SAMMI, your bot, whatever, so that when a viewer redeems channel points or donates a certain amount, suddenly you have to do an extra playthrough of, say, Donkey Kong on the NES. Every $X means another loop, but even if you clear the game...it could come back!
+When I made it, I was thinking it would be used for donation incentives. For example, if your community donates $X dollars, you have to add one loop of Donkey Kong for the NES to your shuffler. This plugin helps you manage your "temporary," incentivized games.
 
 ## How do I use this?
 
-**Outside of Bizhawk Shuffler**
-1. **Extract** the download to your Bizhawk Shuffler\Plugins folder.
+TLDR:
 
-2. **Store your ROMS!**
-	* Place the ROM files you want to make temporary goods in the **<Plugin>\TempGoods\storage** folder
+1) Extract into your Shuffler's plugins folder
+2) Put your Temporary Games into the storage folder
+3) Enable the Plugin
+4) [Trigger the plugin](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/wiki/Temporary-Goods-%E2%80%90-Getting-Started#trigger-files) to add a TempGood to the list.
+5) Mark the game as complete to remove it from the game list.
+6) Repeat steps 4 and 5 as needed.
 
-2. **Figure out how you set up your triggers.**
-	* The plugin will look in the **<Plugin Folder>\TempGoods\restore** folder to determine what games to 'release' from storage.
-	* It's looking for a file either named:
-		
-		* Exactly the same as your rom file (e.g. an empty file named "Donkey Kong.nes")
-		* A .txt file named exactly the same as your rom file (e.g. an empty file named "Donkey Kong.nes.txt")
-	
-**Inside Bizhawk Shuffler**
-1. Enable the plugin on initial shuffler setup.
-2. That's pretty much it; it'll handle things from there.
+If you need more help, head here.
 
-## FAQ
 
-**Q: It doesn't seem to be working.**
+## Trigger Files
 
-A: Check Bizhawk's lua console window. The plugin will spit out error messages if it runs into an issue.
+TLDR: Create a file with the same filename (or the same filename plus .txt) as your TempGood game in the `restore` directory. E.G. if you want to take `Donkey Kong.nes` out of your TempGoods storage, create a file named `Donkey Kong.nes` or `Donkey Kong.nes.txt` in your `restore` directory.
 
-**Q: There are no error messages but the plugin doesn't seem to be working.**
-A: Feel free to send me a friendly message @SushiKishi whereever at symbols are sold.
+If you need more help, head here.
 
-**Q: Why is it called "Temporary Goods?"**
+## Quick Links:
 
-A: It's an [unused item](https://tcrf.net/EarthBound) in the game EarthBound, which is my favorite game of all time.
+* [Getting Started](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/wiki/Temporary-Goods-%E2%80%90-Getting-Started) - A step-by-step Guide
+* [Trigger Files](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/wiki/Temporary-Goods-%E2%80%90-Getting-Started#trigger-files) - Or, how to activate the plugin and add a game to the active game list.
+* [Help with Disc-based, Multi-Disc, or MAME games](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/wiki/Temporary-Goods-%E2%80%90-Disc%E2%80%90Based,-MAME,-and-Multi%E2%80%90Disc-games)
+* [Troubleshooting and FAQs](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/wiki/Temporary-Goods-%E2%80%90-FAQs---Troubleshooting)
 
+## Contact / Issues / Bugs
+
+Report bugs [here](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/issues), or send a very friendly message to @SushiKishi whereever at symbols are sold.
