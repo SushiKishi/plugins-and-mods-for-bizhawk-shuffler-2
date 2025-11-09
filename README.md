@@ -18,36 +18,33 @@ That sounds ominous, but it really just means "I changed a few lines of code in 
 
 * [Plugin page](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Hot%20Swap%20Timers) (download, instructions, etc.)
 * [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Hot%20Swap%20Timers/Hot%20Swap%20Timers%20-%20BS2%20Plugin.zip) (v1.00)
-* [Branch](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/hot-swap-timers) (for contributing to code)
+
 
 By default, you have to set the minimum and maximum swap timers for the Shuffler at the start of your game, and you can't modify them again unless you stop playing and go back to the settings screen.  This lets you change the timers by modifying text files -- allowing for, say, donation incentives or other viewer interactions to change how often the Shuffler changes games.
 
 ## Temporary Goods - Plugin
 
 * [Main Page](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Temporary%20Goods) (download, instructions, etc.)
-* [Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Temporary%20Goods/Temporary%20Goods%20-%20BS2%20Plugin.zip) (v1.00)
-* [Branch](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/temporary-goods) (for contributing to code)
+* [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Temporary%20Goods/Temporary%20Goods%20-%20BS2%20Plugin.zip) (v1.1.0)
+
 
 
 Temporary Goods allows you to choose a list of games you can set aside as "temporary." The typical reason for this is to allow a game into the Shuffler as a donation incentive -- say, for every $X in donations, you add one loop of Donkey Kong to the Shuffler.
 
 Usually, this is an extremely complicated and clunky process, requiring multiple stoppages of play.  With this plugin, it's very easy!
 
-## Weighted Odds - "Mod"
+## Weighted Odds - Plugin
 
 * [Main Page](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Weighted%20Odds%20Mod) (download, instructions, etc.)
-* Currently no official release -- something broke when BS2 updated and I gotta fix it.
-* [Branch](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/weighted-odds-mod) (for contributing to code)
+* Currently no official release -- something broke when BS2 updated and I gotta fix it, but I've also found another way to do this so hopefully something soon!
 
 The Shuffler has a "random" shuffler option that picks games at random.  That, technically, means that the game you played last swap is just as likely to be chosen again as every other game, including games you haven't played in a while.
 This mod adds a Weighted Odds shuffle mode. The longer a game goes without being played, the more likely it is to be selected next. It can make the Shuffler "feel" more random, even if mathematically it technically isn't.
 
 ## Ye Olde "User Wins" Instant Notification - Plugin
 
-Still In Development
+*Hopefully before GTA VI*
 
 Ye Olde "User Wins" Instant Notification simply displays in big, fancy letters on the game screen that YOU WIN! when you finish completing your Shuffler playlist. By default, the completion notification only appears within the Lua dialog box. Boring!
 
-## Contributing
 
-Please contribute to the indiviual plugin or mod branches, not the main branch.
