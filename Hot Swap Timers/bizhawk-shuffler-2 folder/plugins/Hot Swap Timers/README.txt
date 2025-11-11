@@ -1,8 +1,6 @@
 # Hot Swap Timers - Plugin for Bizhawk Shuffler 2
 
-* [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Hot%20Swap%20Timers/Hot%20Swap%20Timers%20-%20BS2%20Plugin.zip) (v1.1.0)
-* [All releases](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Hot%20Swap%20Timers/all%20releases)
-
+https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Hot%20Swap%20Timers
 
 ## What's new this version?
 
@@ -22,10 +20,14 @@ This allows you to control the swap timers (minimum and maximum range) of the Bi
 **Outside of Bizhawk Shuffler**
 1. **Figure out how you want to modify your timer files.**
 	* Options include using stream bot to react to commands or interactions, StreamDeck, SAMMI, or manually changing the numbers yourself as needed with a text editor.
-	* The files in question are in `<Bizhawk Shuffler>/<plugins>/Hot Swap Timers/`
-		* `min.txt` and `max.txt` control the minimum and maximum swap timers, respectively
-		* `combo.txt` is used with the "Combo File" setting enabled. Line 1 is minimum, line 2 is maximum.
-		* If you flip-flop the min and max, the plugin will handle it.
+	* The files in question are in:
+		<Bizhawk Shuffler>/<plugins>/Hot Swap Timers/>
+		
+	* min.txt and max.txt control the minimum and maximum swap timers, respectively
+		
+	* combo.txt is used with the "Combo File" setting enabled. Line 1 is minimum, line 2 is maximum.
+	
+	* If you flip-flop the min and max, the plugin will handle it.
 
 
 **Outside of Bizhawk Shuffler**
@@ -44,7 +46,20 @@ A: Check Bizhawk's lua console window. The plugin will spit out error messages i
 
 **Q: I need to enable debugging without resetting the Shuffler.**
 
-A: Go to `<Bizhawk Shuffler>\shuffler-src\` and make a backup of `config.lua`.  ** Proceed at your own risk. **  Change the value of `plugins > hot-swap-timers > debugging` to `true`.
+A: Go to
+	<Bizhawk Shuffler>\shuffler-src\>
+and make a backup of the file:
+	<config.lua>
+
+** Proceed at your own risk. **  Change the value of 
+
+	plugins > hot-swap-timers > debugging
+
+to
+
+	true
+
+.
 
 **Q: There are no error messages but the plugin doesn't seem to be working. For example, I tried setting minimum and maximum to 1-2 seconds and it still takes a long time to swap.**
 
