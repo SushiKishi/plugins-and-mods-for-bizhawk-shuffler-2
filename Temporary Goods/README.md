@@ -1,12 +1,18 @@
 # Temporary Goods Plugin
 
-* [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Temporary%20Goods/Temporary%20Goods%20-%20BS2%20Plugin.zip) (v1.10)
+* [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Temporary%20Goods/Temporary%20Goods%20-%20BS2%20Plugin.zip) (v1.1.1)
 * [All Releases](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Temporary%20Goods/all%20releases)
 
 
-## What's new this version?
+## What's new in v1.1.x?
 
-* The plugin can now update your game list when there is only one game in the game list.
+* The plugin can now update your game list when there is only one game in the game list!
+
+
+Minor Updates:
+
+* Removed wayward debugging message left behind in error. (v1.1.1)
+* Changed the folder structure of the Git a bit (v1.1.1)
 
 Known Issues: None; please report any issues using [GitHub's Issues tracker](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/issues).
 

@@ -10,7 +10,7 @@ plugin.settings =
 
 plugin.description =
 [[
-	Plugin Version: 1.1.0
+	Plugin Version: 1.1.1
 	Plugin page, with setup guide: https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Temporary%20Goods
 	
 	The short version is that this plugin makes it easier for you to hotswap a list of "temporary games" into and out of the active game list as needed. The primary idea for this plugin is to set up a game as a "donation incentive" for your Shuffler playthrough that gets added when a goal is met, removed when the game is cleared, then added again if the goal is met again.
