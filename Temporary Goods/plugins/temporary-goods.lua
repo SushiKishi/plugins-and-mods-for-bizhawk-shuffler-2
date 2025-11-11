@@ -34,7 +34,6 @@ function updateListOfGoods(PluginsFolder, StorageGameFolder, ActiveGameFolder)
 	--You can't just get_dir_whatever the TempGoods storage folder, because a TempGood may be in use.
 	--So you have to: 1) check the TempGoods storage folder, 2) check the active Game Folder, 3) only take _TempGoods_ from the Game Folder.
 	
-	print("Temporary Goods: WTF!? Ok, so the  StorageGameFolder is: " .. StorageGameFolder .. " and active is " .. ActiveGameFolder)
 	local storedGoods = get_dir_contents(StorageGameFolder, PluginsFolder .. "/__ALL_StoredGoods.txt", false)
 	local activeGoods = get_dir_contents(ActiveGameFolder, PluginsFolder .. "/__ALL_ActiveGoods.txt", false)
 	local allGoods = {}
