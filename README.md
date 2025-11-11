@@ -17,7 +17,7 @@ That sounds ominous, but it really just means "I changed a few lines of code in 
 ## Hot Swap Timers - Plugin
 
 * [Plugin page](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Hot%20Swap%20Timers) (download, instructions, etc.)
-* [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Hot%20Swap%20Timers/Hot%20Swap%20Timers%20-%20BS2%20Plugin.zip) (v1.00)
+* [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Hot%20Swap%20Timers/Hot%20Swap%20Timers%20-%20BS2%20Plugin.zip) (v1.1.0)
 
 
 By default, you have to set the minimum and maximum swap timers for the Shuffler at the start of your game, and you can't modify them again unless you stop playing and go back to the settings screen.  This lets you change the timers by modifying text files -- allowing for, say, donation incentives or other viewer interactions to change how often the Shuffler changes games.
@@ -25,7 +25,7 @@ By default, you have to set the minimum and maximum swap timers for the Shuffler
 ## Temporary Goods - Plugin
 
 * [Main Page](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Temporary%20Goods) (download, instructions, etc.)
-* [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Temporary%20Goods/Temporary%20Goods%20-%20BS2%20Plugin.zip) (v1.1.0)
+* [Download Latest Version](https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/raw/refs/heads/main/Temporary%20Goods/Temporary%20Goods%20-%20BS2%20Plugin.zip) (v1.1.1)
 
 
 
