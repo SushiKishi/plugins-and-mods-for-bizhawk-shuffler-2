@@ -4,11 +4,15 @@
 * Download older versions - https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/tree/main/Temporary%20Goods/all%20releases
 
 
-## What's new this version?
+## What's new in v1.1.x?
 
 * The plugin can now update your game list when there is only one game in the game list!
 
-v1.1.1 is a minor update correcting typos and removing a debugging message I left in by mistake.
+
+Minor Updates:
+
+* Removed wayward debugging message left behind in error. (v1.1.1)
+* Changed the folder structure of the Git a bit (v1.1.1)
 
 Known Issues: None; please report any issues using GitHub's Issues tracker - https://github.com/SushiKishi/plugins-and-mods-for-bizhawk-shuffler-2/issues
 
